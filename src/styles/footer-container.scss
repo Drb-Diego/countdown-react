@@ -1,0 +1,22 @@
+.footer-container {
+  background-image: url("../assets/pattern-hills.svg");
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding: 10px;
+
+  .nav {
+    padding-top: 3rem;
+    width: 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .linkedin-icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
