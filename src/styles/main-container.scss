@@ -1,5 +1,46 @@
 .main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 80vh;
   width: 100vw;
   background-image: url("../assets/bg-stars.svg");
+
+  .main-content {
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+
+    .card-container {
+      margin: 0 0.3rem;
+      box-shadow: 0 0 0.3rem black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &:hover {
+        opacity: 0.9;
+        color: white;
+        transition: 500ms;
+      }
+
+      .card-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+
+        .increment {
+          color: rgb(190, 190, 21);
+          cursor: pointer;
+          font-size: 1.5rem;
+        }
+        .decrement {
+          color: rgb(190, 190, 21);
+          cursor: pointer;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
 }

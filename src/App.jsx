@@ -1,15 +1,20 @@
-import "./styles/container.scss";
+import "./styles/wrapperApp.scss";
 import "./styles/main-container.scss";
 import "./styles/footer-container.scss";
 
 import instagramIcon from "./assets/icon-instagram.svg";
 import linkedinIcon from "./assets/icon-linkedin.svg";
 import githubIcon from "./assets/icon-github.svg";
+import CardClock from "./components/CardClock";
 
 function App() {
   return (
     <div className='wrapper'>
-      <main className='main-container'></main>
+      <main className='main-container'>
+        <div className="main-content">
+          <CardClock />
+        </div>
+      </main>
 
       <footer className='footer-container'>
         <nav className='nav'>
